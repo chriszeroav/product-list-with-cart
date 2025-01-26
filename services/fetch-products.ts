@@ -2,7 +2,7 @@ import { ProductRequest } from "@/types";
 
 export const fetchProducts = async (): Promise<ProductRequest[]> => {
   try {
-    const response = await fetch("http://localhost:3000/data.json", {
+    const response = await fetch("/data.json", {
       cache: "force-cache",
     });
     const data: ProductRequest[] = await response.json();
