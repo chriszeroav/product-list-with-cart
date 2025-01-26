@@ -5,7 +5,7 @@ import "./globals.css";
 const redHatText = Red_Hat_Text({
   variable: "--font-red-hat-text",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={redHatText.variable}>
-        <div>{children}</div>
+        <div className="grid min-h-dvh bg-rose-custom-50">{children}</div>
       </body>
     </html>
   );
